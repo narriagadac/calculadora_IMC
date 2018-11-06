@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<meta charset="UTF-8">
+	<title>IMC</title>
+</head>
+<body>
+	
+	<div id="contenido">
+		<h2>Cálculo IMC</h2>
+		<div id="errorIMC"></div>
+		PESO  :<br>	
+		<input type="text" id="peso" onKeyPress="return soloNumeros(event)"><br><br>
+		ALTURA:<br>	
+		<input type="text" id="altura" onKeyPress="return soloNumeros(event)"><br><br>
+		<input type="button" class="btn btn-primary" value="calcular" onclick="calc_imc()">
+		<input type="button" class="btn btn-primary" value="limpiar" onclick="limpiar()">
+		<h2>RESULTADO</h2>
+		IMC  :<br>	
+		<input type="text" id="IMC"><br><br>
+		ESTADO:<br>	
+		<input type="text" id="ESTADO"><br><br>
+	</div>
+</body>
+</html>
